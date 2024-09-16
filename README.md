@@ -1,7 +1,7 @@
 # MARS-Reconfig
-The **MARS-Reconfig** is a novel learning framework for cooperative load transportation with quadrotors. It can automatically tune various MPC hyperparameters, which are modeled by DNNs and difficult to tune manually, via reinforcement learning in a distributed and closed-loop manner.
+The **MARS-Reconfig** is a 
 
-|                     A Diagram of a multilift system and Auto-Multilift Learning Piplines             |
+|                     A Diagram of a XX             |
 :----------------------------------------------------------------------------------------------------------------------------------:
 ![diagram](https://github.com/RCL-NUS/Auto-Multilift/assets/70559054/69630451-7259-4dcb-ba0c-cb23f0f5b6f5)
 
