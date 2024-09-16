@@ -27,15 +27,8 @@ The project consists of two folders, which correspond to the two experiments in 
 
 ## 2. Dependency Packages
 Please make sure that the following packages have already been installed before running the source code.
-* CasADi: version 3.5.5 Info: https://web.casadi.org/
-* ACADOS: Info: https://docs.acados.org/
-* Numpy: version 1.23.0 Info: https://numpy.org/
-* Pytorch: version 1.12.0+cu116 Info: https://pytorch.org/
-* Matplotlib: version 3.3.0 Info: https://matplotlib.org/
-* Python: version 3.9.12 Info: https://www.python.org/
-* Scipy: version 1.8.1 Info: https://scipy.org/
-* Pandas: version 1.4.2 Info: https://pandas.pydata.org/
-* scikit-learn: version 1.0.2 Info: https://scikit-learn.org/stable/whats_new/v1.0.html
+* XXX: version 1.4.2 Info: https://pandas.pydata.org/
+* XXX-learn: version 1.0.2 Info: https://scikit-learn.org/stable/whats_new/v1.0.html
 
 ## 3. How to Use
 First and foremost, the implementation for Auto-Multilift is straightforward to setup. The source code has been comprehensively annotated to facilitate ease of use. To reproduce the simulation results presented in the paper, simply follow the steps outlined below, sequentially, after downloading and decompressing all the necessary folders.
