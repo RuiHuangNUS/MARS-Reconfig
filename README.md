@@ -79,9 +79,9 @@ First and foremost, the implementation for Auto-Multilift is straightforward to 
 
 ## 4. Contact Us
 If you encounter a bug in your implementation of the code, please do not hesitate to inform me.
-* Name: Mr. Bingheng Wang
-* Email: wangbingheng@u.nus.edu
+* Name: Mr. Rui Huang
+* Email: ruihuang@nus.edu.sg
 
 ## References
 <a id="1">[1]</a> 
-Jin, Wanxin and Mou, Shaoshuai and Pappas, George J, "Safe pontryagin differentiable programming", Advances in Neural Information Processing Systems, 34, 16034--16050, 2021
+
