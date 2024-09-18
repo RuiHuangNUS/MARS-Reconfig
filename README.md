@@ -41,7 +41,7 @@ First and foremost, the implementation for Auto-Multilift is straightforward to 
 
 
 
-1. Open the Python file '**main_distributed_autotuning_acados.py**' in the folder '**Source code A**'
+1. Open the Python file '**main_distributed_autotuning_acados.py**' in the folder '**Algorithm**'
 2. Before running, please do the following settings:
    * Set the number of quadrotors on line 42 (i.e., the fifth number in the 'uav_para' array).
    * Set the load mass value on line 43 (i.e., the first number in the 'load_para' array).
@@ -59,7 +59,7 @@ First and foremost, the implementation for Auto-Multilift is straightforward to 
 :----------------------------------------------------------------------------------------------------------------------------------------:
 ![training_tension_ref_cl](https://github.com/RCL-NUS/Auto-Multilift/assets/70559054/e7942afd-684f-4600-acd3-ff3710992ed6)
 
-1. Open the Python file '**main_distributed_autotuning_acados_tensionref.py**' in the folder '**Source code B**'
+1. Open the Python file '**XXX.py**' in the folder '**Algorithm**'
 2. Before running, please do the following settings:
    * Set the number of quadrotors on line 40 to the same as that used in Section A (i.e., learning of adaptive weightings). 
    * Set the load mass value on line 43 (i.e., the first number in the 'load_para' array).
@@ -71,14 +71,19 @@ First and foremost, the implementation for Auto-Multilift is straightforward to 
    * You can skip Step 4 and evaluate the saved models that were previously trained and employed in the paper. To do so, copy the files that end with '.pt' from the folder '**Previously trained models**' (within the folder '**Source code B**') to the folder '**trained data**' (where the retained models via Step 4 will be saved).
 
 ### C: Simulation 1: Full disassembly in a 3×2 assembly
+1. Open the file '**test.ttt**' in the folder '**Simulation**'
 
 ### D: Simulation 2: Partial disassembly in a 3×2 assembly
+1. Open the file '**test.ttt**' in the folder '**Simulation**'
 
 ### E: Simulation 3: Self-reconfiguration flow after failure of unit No.3 in a 3×2 assembly
+1. Open the file '**test.ttt**' in the folder '**Simulation**'
 
 ### F: Simulation 4: Full disassembly in a 3×3 assembly
+1. Open the file '**test.ttt**' in the folder '**Simulation**'
 
 ### G: Simulation 5: Partial disassembly in a 3×3 assembly
+1. Open the file '**test.ttt**' in the folder '**Simulation**'
 
 ## 4. Contact Us
 If you encounter a bug in your implementation of the code, please do not hesitate to inform me.
