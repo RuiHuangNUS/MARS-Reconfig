@@ -1,7 +1,7 @@
 # MARS-Reconfig
 The **MARS-Reconfig** is a 
 
-|                     A Diagram of a XX666             |
+|                     A Diagram of a XX             |
 :----------------------------------------------------------------------------------------------------------------------------------:
 ![diagram](https://github.com/RCL-NUS/Auto-Multilift/assets/70559054/69630451-7259-4dcb-ba0c-cb23f0f5b6f5)
 
