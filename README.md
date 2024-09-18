@@ -13,7 +13,12 @@ Please find out more details in our paper: "Robust Self-Reconfiguration for Faul
 1. [Project Overview](#project-Overview)
 2. [Dependency Packages](#Dependency-Packages)
 3. [How to Use](#How-to-Use)
-      1. [A: Distributed Learning of Adaptive Weightings](#A-Distributed-Learning-of-Adaptive-Weightings)
+      1. [A: Algorithm 1 Find Optimal Reconfiguration](### A: Algorithm 1 Find Optimal Reconfiguration)
+      2. [B: Distributed Learning of Adaptive References](#B-Distributed-Learning-of-Adaptive-References)
+      2. [B: Distributed Learning of Adaptive References](#B-Distributed-Learning-of-Adaptive-References)
+      2. [B: Distributed Learning of Adaptive References](#B-Distributed-Learning-of-Adaptive-References)
+      2. [B: Distributed Learning of Adaptive References](#B-Distributed-Learning-of-Adaptive-References)
+      2. [B: Distributed Learning of Adaptive References](#B-Distributed-Learning-of-Adaptive-References)
       2. [B: Distributed Learning of Adaptive References](#B-Distributed-Learning-of-Adaptive-References)
 4. [Contact Us](#Contact-Us)
 
