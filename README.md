@@ -27,7 +27,7 @@ The project consists of two folders, which correspond to the two experiments in 
 
 ## 2. Dependency Packages
 Please make sure that the following packages have already been installed before running the source code.
-* XXX: version 1.4.2 Info: https://pandas.pydata.org/
+* CoppeliaSim: version 1.4.2 Info: https://pandas.pydata.org/
 * XXX-learn: version 1.0.2 Info: https://scikit-learn.org/stable/whats_new/v1.0.html
 
 ## 3. How to Use
