@@ -34,7 +34,7 @@ Please make sure that the following packages have already been installed before 
 First and foremost, the implementation for Auto-Multilift is straightforward to setup. The source code has been comprehensively annotated to facilitate ease of use. To reproduce the simulation results presented in the paper, simply follow the steps outlined below, sequentially, after downloading and decompressing all the necessary folders.
 
 
-### A: Distributed Learning of Adaptive Weightings
+### A: Algorithm 1 Find Optimal Reconfiguration
  Auto-Multilift       |      Safe-PDP (Open-loop Learning)
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RCL-NUS/Auto-Multilift/assets/70559054/079f47af-ca09-4c64-84f7-152fc96fa71e) | ![ol_training](https://github.com/RCL-NUS/Auto-Multilift/assets/70559054/6762dab9-4859-454d-88d0-d64ca6a2affa)
@@ -54,7 +54,7 @@ First and foremost, the implementation for Auto-Multilift is straightforward to 
    * You can skip Step 4 and evaluate the saved models that were previously trained and employed in the paper. To do so, copy the files that end with '.pt' from the folder '**Previously trained models**' (within the folder '**Source code A**') to the folder '**trained data**' (where the retained models via Step 4 will be saved).
 
 
-### B: Distributed Learning of Adaptive References
+### B: Algorithm 3 Plan Disassembly and Assembly Sequence
 |                     Learning Process of the Same Large Multilift System                                                                |
 :----------------------------------------------------------------------------------------------------------------------------------------:
 ![training_tension_ref_cl](https://github.com/RCL-NUS/Auto-Multilift/assets/70559054/e7942afd-684f-4600-acd3-ff3710992ed6)
@@ -69,6 +69,8 @@ First and foremost, the implementation for Auto-Multilift is straightforward to 
    * In our settings, 's' and 'p' denote 'sequential' and 'parallel' computing, respectively.
 5. To evaluate the trained model, run the Python file '**main_distributed_acados_tensionref_evaluation.py**'
    * You can skip Step 4 and evaluate the saved models that were previously trained and employed in the paper. To do so, copy the files that end with '.pt' from the folder '**Previously trained models**' (within the folder '**Source code B**') to the folder '**trained data**' (where the retained models via Step 4 will be saved).
+
+### C: Simulation: 
 
 ## 4. Contact Us
 If you encounter a bug in your implementation of the code, please do not hesitate to inform me.
