@@ -70,7 +70,15 @@ First and foremost, the implementation for Auto-Multilift is straightforward to 
 5. To evaluate the trained model, run the Python file '**main_distributed_acados_tensionref_evaluation.py**'
    * You can skip Step 4 and evaluate the saved models that were previously trained and employed in the paper. To do so, copy the files that end with '.pt' from the folder '**Previously trained models**' (within the folder '**Source code B**') to the folder '**trained data**' (where the retained models via Step 4 will be saved).
 
-### C: Simulation: 
+### C: Simulation 1: 3x2 
+
+### D: Simulation 2: 3x2
+
+### E: Simulation 3: 3x2
+
+### F: Simulation 4: 3x3
+
+### G: Simulation 5: 3x3
 
 ## 4. Contact Us
 If you encounter a bug in your implementation of the code, please do not hesitate to inform me.
