@@ -31,6 +31,7 @@ Please make sure that the following packages have already been installed before 
 
 ## 3. How to Use
 First and foremost, the implementation for Auto-Multilift is straightforward to setup. The source code has been comprehensively annotated to facilitate ease of use. To reproduce the simulation results presented in the paper, simply follow the steps outlined below, sequentially, after downloading and decompressing all the necessary folders.
+All the control methods of different configurations are based on previous works[[1]](#1).
 
 
 ### A: Algorithm 1 Find Optimal Reconfiguration
