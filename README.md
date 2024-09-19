@@ -37,7 +37,7 @@ All the control methods of different configurations are based on previous works 
 ### A: Algorithm 1 Find Optimal Reconfiguration
   CM calculation after failure of one unit in a 3×2 assembly     |   CM calculation after failure of one unit in a 3×3 assembly
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
-![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x2.gif) | ![ol_training](https://github.com/RCL-NUS/Auto-Multilift/assets/70559054/6762dab9-4859-454d-88d0-d64ca6a2affa)
+![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x3.gif)
 
 
 
