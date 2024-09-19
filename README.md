@@ -41,7 +41,7 @@ All the control methods of different configurations are based on previous works 
 
 
 
-1. Open the Python file '**main_distributed_autotuning_acados.py**' in the folder '**Algorithm**'
+1. Open the Python file '**Algorithm1_Find_Optimal_Reconfiguration.py**' in the folder '**Algorithm**'
 2. Before running, please do the following settings:
    * Set the number of quadrotors on line 42 (i.e., the fifth number in the 'uav_para' array).
    * Set the load mass value on line 43 (i.e., the first number in the 'load_para' array).
