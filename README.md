@@ -18,11 +18,10 @@ Please find out more details in our paper: "Robust Self-Reconfiguration for Faul
 4. [Contact Us](#Contact-Us)
 
 ## 1. Project Overview
-The project consists of two folders, which correspond to the two experiments in the paper that show the following three advantages of our method.
-1. Auto-Multilift enjoys fast convergence in just a few iterations, with its convergence speed unaffected by the number of quadrotors.
-2. Auto-Multilift is able to learn adaptive MPC weightings directly from trajectory tracking errors. Additionally, it significantly improves training stability and tracking performance over a state-of-the-art open-loop learning method [[1]](#1).
-3. Beyond its improved training ability to learn adaptive MPC weightings, our method can effectively learn an adaptive tension reference, enabling the multilift system to reconfigure itself when traversing through obstacles.
-
+The project consists of two folders, which correspond to the ********Algorithm** and **Simulation** in the paper that show the following two advantages of our method.
+To address the safety and controllability challenges in the self-reconfiguration process while minimizing the number of reconfiguration steps, we propose a controllability theory-based self-reconfiguration algorithm that incorporates a more practical MARS model with constrained control inputs. Compared to existing state-of-the-art methods [[1]](#1), our approach offers an interpretable and quantifiable measure for determining the robustness of configurations. Specifically, our key contributions include:
+1. We propose an efficient controllability analysis for MARS using a quasi-static model under control constraints.
+2. We propose a novel controllability margin (CM)--based method for calculating optimal self-reconfiguration sequences.
 
 
 ## 2. Dependency Packages
