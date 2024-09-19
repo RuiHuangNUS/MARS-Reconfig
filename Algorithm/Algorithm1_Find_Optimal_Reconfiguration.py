@@ -71,7 +71,7 @@ def visualize_robots(robots, M, N, title="Robot Configuration", save_path=None, 
     ax = plt.gca()
     
     # 设置边距
-    margin = 1
+    margin = 0.4
 
     # Add robot numbering based on 3x3 grid positions
     robot_numbering = np.arange(1, M * N + 1).reshape(N, M)
@@ -199,7 +199,7 @@ def brute_force_optimal_configuration(original, faulty_robot, non_symmetric_posi
                         visualize_robots(new_configuration, M, N, 
                                         f"Step: Place Faulty Robot at No. {robot_number}, Orientation: {current_faulty_robot.orientation}°", 
                                         save_path=img_path, annotation_text=annotation_text, 
-                                        text_position=(0.7, 1.05))  # Adjust the position as needed
+                                        text_position=(0.65, 1.05))  # Adjust the position as needed
                         images.append(img_path)
 
                         if difference < min_difference:
