@@ -35,7 +35,7 @@ All the control methods of different configurations are based on previous works 
 
 
 ### A: Algorithm 1 Find Optimal Reconfiguration
- Auto-Multilift       |      Safe-PDP (Open-loop Learning)
+  CM calculation after failure of one unit in a 3×2 assembly     |   CM calculation after failure of one unit in a 3×3 assembly
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RCL-NUS/Auto-Multilift/assets/70559054/079f47af-ca09-4c64-84f7-152fc96fa71e) | ![ol_training](https://github.com/RCL-NUS/Auto-Multilift/assets/70559054/6762dab9-4859-454d-88d0-d64ca6a2affa)
 
