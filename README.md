@@ -18,8 +18,7 @@ Please find out more details in our paper: "Robust Self-Reconfiguration for Faul
 4. [Contact Us](#Contact-Us)
 
 ## 1. Project Overview
-The project consists of two folders, which correspond to the ********Algorithm** and **Simulation** in the paper that show the following two advantages of our method.
-To address the safety and controllability challenges in the self-reconfiguration process while minimizing the number of reconfiguration steps, we propose a controllability theory-based self-reconfiguration algorithm that incorporates a more practical MARS model with constrained control inputs. Compared to existing state-of-the-art methods [[1]](#1), our approach offers an interpretable and quantifiable measure for determining the robustness of configurations. Specifically, our key contributions include:
+The project consists of two folders, which correspond to the **Algorithm** and **Simulation** in the paper that show the following two advantages of our method.
 1. We propose an efficient controllability analysis for MARS using a quasi-static model under control constraints.
 2. We propose a novel controllability margin (CM)--based method for calculating optimal self-reconfiguration sequences.
 
