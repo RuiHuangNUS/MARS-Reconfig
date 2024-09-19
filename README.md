@@ -90,5 +90,5 @@ If you encounter a bug in your implementation of the code, please do not hesitat
 * Email: ruihuang@nus.edu.sg
 
 ## References
-<a id="1">[1]</a> 
+<a id="1">[1]</a> HUANG, R., SHENG, H., Qian, C. H. E. N., Ziting, R. A. N., Zhen, X. U. E., Jiacheng, L. I., & Tong, L. I. U. (2024). Adaptive configuration control of combined UAVs based on leader-wingman mode. Chinese Journal of Aeronautics.
 
