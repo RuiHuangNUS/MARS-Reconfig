@@ -3,9 +3,8 @@ The **MARS-Reconfig** is a
 
 |                     A Diagram of a XX             |
 :----------------------------------------------------------------------------------------------------------------------------------:
+<<<<<<< HEAD
 ![diagram](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/Fig1.png)
-
-
 Please find out more details in our paper: "Robust Self-Reconfiguration for Fault-Tolerant Control of Modular Aerial Robot Systems" 
 
 
