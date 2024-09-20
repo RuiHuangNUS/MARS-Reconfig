@@ -37,7 +37,7 @@ All the control methods of different configurations are based on previous works 
 
 
 ### A: Algorithm 1 Find Optimal Reconfiguration
-  CM calculation after failure of one unit in a 3×2 assembly     |   CM calculation after failure of one unit in a 3×3 assembly
+  CM calculation in a 3×2 assembly (one failure)    |   CM calculation in a 3×3 assembly (one failure) 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x3.gif)
 
@@ -57,11 +57,11 @@ All the control methods of different configurations are based on previous works 
 
 
 ### B: Algorithm 3 Plan Disassembly and Assembly Sequence
-  Full self-reconfiguration after failure of one unit in a 3×2 assembly     |   Partial self-reconfiguration after failure of one unit in a 3×2 assembly
+  Full self-reconfiguration in a 3×2 assembly (one failure)      |   Partial self-reconfiguration in a 3×2 assembly (one failure) 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x2.gif)
 
-  Full self-reconfiguration after failure of one unit in a 3×3 assembly     |   Partial self-reconfiguration after failure of one unit in a 3×3 assembly
+  Full self-reconfiguration in a 3×3 assembly (one failure)    |   Partial self-reconfiguration in a 3×3 assembly (one failure) 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x3.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x3.gif)
 
