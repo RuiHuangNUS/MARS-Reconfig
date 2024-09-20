@@ -35,13 +35,10 @@ Please make sure that the following packages have already been installed before 
 First and foremost, the implementation for Auto-Multilift is straightforward to setup. The source code has been comprehensively annotated to facilitate ease of use. To reproduce the simulation results presented in the paper, simply follow the steps outlined below, sequentially, after downloading and decompressing all the necessary folders.
 All the control methods of different configurations are based on previous works [[1]](#1).
 
-
 ### A: Algorithm 1 Find Optimal Reconfiguration
   CM calculation in a 3×2 assembly (one failure)    |   CM calculation in a 3×3 assembly (one failure) 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x3.gif)
-
-
 
 1. Open the Python file '**Algorithm1_Find_Optimal_Reconfiguration.py**' in the folder '**Algorithm**'
 2. Before running, please do the following settings:
