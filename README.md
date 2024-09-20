@@ -27,7 +27,9 @@ The project consists of two folders, which correspond to the **Algorithm** and *
 ## 2. Dependency Packages
 Please make sure that the following packages have already been installed before running the source code.
 * CoppeliaSim: version 4.6.0 Info: https://www.coppeliarobotics.com/
-* XXX-learn: version 1.0.2 Info: https://scikit-learn.org/stable/whats_new/v1.0.html
+* imageio: version X.x.x Info: https://scikit-learn.org/stable/whats_new/v1.0.html
+* matplotlib: version X.x.x Info: https://scikit-learn.org/stable/whats_new/v1.0.html
+* matplotlib: version X.x.x Info: https://scikit-learn.org/stable/whats_new/v1.0.html
 
 ## 3. How to Use
 First and foremost, the implementation for Auto-Multilift is straightforward to setup. The source code has been comprehensively annotated to facilitate ease of use. To reproduce the simulation results presented in the paper, simply follow the steps outlined below, sequentially, after downloading and decompressing all the necessary folders.
