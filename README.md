@@ -57,9 +57,13 @@ All the control methods of different configurations are based on previous works 
 
 
 ### B: Algorithm 3 Plan Disassembly and Assembly Sequence
-|                     Learning Process of the Same Large Multilift System                                                                |
-:----------------------------------------------------------------------------------------------------------------------------------------:
-![training_tension_ref_cl](https://github.com/RCL-NUS/Auto-Multilift/assets/70559054/e7942afd-684f-4600-acd3-ff3710992ed6)
+  CM calculation after failure of one unit in a 3×2 assembly     |   CM calculation after failure of one unit in a 3×3 assembly
+:---------------------------------------------------------------:|:--------------------------------------------------------------:
+![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x2.gif)
+
+  Full self reconfiguration after failure of one unit in a 3×3 assembly     |   Partial self reconfiguration after failure of one unit in a 3×3 assembly
+:---------------------------------------------------------------:|:--------------------------------------------------------------:
+![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x3.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x3.gif)
 
 1. Open the Python file '**XXX.py**' in the folder '**Algorithm**'
 2. Before running, please do the following settings:
