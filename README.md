@@ -1,5 +1,6 @@
 # MARS-Reconfig (coming soon)
 The **MARS-Reconfig** is a 
+|                     A Video  of this paper             |
 [![NetFlix on UWP](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/movie_cover.png?raw=true)](https://youtu.be/SB0hwK33088 "NetFlix on UWP")
 |                     A Diagram of a XX             |
 :----------------------------------------------------------------------------------------------------------------------------------:
