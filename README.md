@@ -7,7 +7,7 @@ The **MARS-Reconfig** is a
   <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/Fig1.png?raw=true" alt="diagram" width="500"/>
 </div>
 
-[![NetFlix on UWP](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/Fig1.png?raw=true)](https://youtu.be/SB0hwK33088 "NetFlix on UWP")
+[![NetFlix on UWP]](https://youtu.be/SB0hwK33088 "NetFlix on UWP")
 MARS is tasked to track a spiral trajectory with two faulty units. The faulty propellers are marked red. (a) MARS crashed after the complete failure of two units (all rotors are broken). (b) MARS can track trajectories after self-reconfiguration. 
 
 Please find out more details in our paper: "Robust Self-Reconfiguration for Fault-Tolerant Control of Modular Aerial Robot Systems" 
