@@ -3,7 +3,7 @@ The **MARS-Reconfig** is a
 |                     A video  of this paper             |
 :----------------------------------------------------------------------------------------------------------------------------------:
 [![NetFlix on UWP](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/movie_cover.png?raw=true)](https://youtu.be/SB0hwK33088 "NetFlix on UWP")
-
+https://youtu.be/SB0hwK33088
 |                     A diagram of a XX             |
 :----------------------------------------------------------------------------------------------------------------------------------:
 <div align="center">
