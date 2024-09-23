@@ -5,7 +5,6 @@ The **MARS-Reconfig** is a
 [![NetFlix on UWP](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/movie_cover.png?raw=true)](https://youtu.be/SB0hwK33088 "NetFlix on UWP")
 https://youtu.be/SB0hwK33088
 |                     A diagram of a XX             |
-:----------------------------------------------------------------------------------------------------------------------------------:
 <div align="center">
   <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/Fig1.png?raw=true" alt="diagram" width="500"/>
 </div>
