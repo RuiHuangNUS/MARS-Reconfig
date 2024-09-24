@@ -109,7 +109,7 @@ Please make sure that the following packages have already been installed before 
 
 ### 5.3 Algorithm 3 Plan Disassembly and Assembly Sequence
 
-1. Open the Python file '**XXX.py**' in the folder '**Algorithm**'
+1. Open the Python file '**Algorithm3_Plan_Disassembly_Assembly_Sequence.py**' in the folder '**Algorithm**'
 2. Before running, please do the following settings:
    * Set the number of quadrotors on line 40 to the same as that used in Section A (i.e., learning of adaptive weightings). 
    * Set the load mass value on line 43 (i.e., the first number in the 'load_para' array).
