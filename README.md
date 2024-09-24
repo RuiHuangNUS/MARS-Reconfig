@@ -25,6 +25,9 @@ Please find out more details in our paper: "Robust Self-Reconfiguration for Faul
   (a)  Before Re-configuration    |   (b) After Re-configuration (Ours) 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_fault_track.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_self_reconfiguration_track.gif)
+Advantages:
+More control authority – Improved robustness against unit faulty
+Improved trajectory tracking performance
 
 ## How to Self-Reconfigure?
 1. Quantifying the Optimal Configuration
@@ -33,12 +36,18 @@ We Calculate the optimal configuration with maximum remaining control authority 
   (a) Calculate the Optimal Reconfiguration in a 3×2 assembly     |   (b) Calculate the Optimal Reconfiguration in a 3×3 assembly 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x3.gif)
+Advantages:
+No need for optimization with an objective function (Less time consumption)
+The optimal configuration ensures controllability and is theoretically guaranteed
 
 2. Ensures the safe transfer of all units
 We designed the Minimum Controllable Subassembly to enable the transfer of faulty units.
 <div align="center">
   <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/self_reconfiguration_flow.png?raw=true" alt="diagram" width="400"/>
 </div>
+Advantages:
+The minimum controllable subassembly ensures the safety of faulty units
+
 3. Examples
 
  (a) 3×2 assembly: full disassembly  |   (b) 3×2 assembly: partial disassembly 
@@ -46,25 +55,35 @@ We designed the Minimum Controllable Subassembly to enable the transfer of fault
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x2.gif)
  (c) 3×3 assembly: full disassembly  |   (d) 3×3 assembly: partial disassembly 
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x3.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x3.gif)
+Advantages:
+Each step of disassembly and assembly is ensured to be theoretically optimal
 
-## Comparison with the baseline method[1]
+## Comparison with the baseline method[2]
 
  (a) 3×2 assembly: full disassembly  |   (b) 3×2 assembly: partial disassembly 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_comparison.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_comparison_origin.gif)
  (c) 3×3 assembly: full disassembly  |   (d) 3×3 assembly: partial disassembly 
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_full.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_partial.gif)
+Advantages:
+Higher controllability margins (Control robustness)
+With improvements of up to 264.50% (blue) and 138.63% (green) compared to [2].
+Fewer disassembly and assembly times (save energy and time)
+Reducing the number of steps by 81.81% and 45.45%, respectively.
+Less oscillation in the reassembled drone after docking and separation.
 
 ## Trajectory tracking
 <div align="center">
   <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_full_track.gif?raw=true" alt="diagram" width="400"/>
 </div>
+Advantages:
+No oscillation during trajectory switching after self-reconfiguration
+Improved trajectory tracking after self-reconfiguration
 
 ## 1. Project Overview
 The project consists of two folders, which correspond to the **Algorithm** and **Simulation** in the paper that show the following two advantages of our method.
 1. We propose an efficient controllability analysis for MARS using a quasi-static model under control constraints.
 2. We propose a novel controllability margin (CM)--based method for calculating optimal self-reconfiguration sequences.
-
 
 ## 2. Dependency Packages
 Please make sure that the following packages have already been installed before running the source code.
@@ -93,7 +112,7 @@ All the control methods of different configurations are based on previous works 
    * Set the MPC horizon on line 52 (the default value is 10).
    * Set the higher-level loss horizon on line 53 (the default value is 20).
 
-### C: Simulation 3: Full disassembly in a 3×3 assembly
+### C: Simulation
 1. Simulation 1: Full disassembly in a 3×2 assembly
 2. Simulation 2: Partial disassembly in a 3×2 assembly
 3. Simulation 3: Full disassembly in a 3×3 assembly
@@ -107,4 +126,4 @@ If you encounter a bug in your implementation of the code, please do not hesitat
 
 ## References
 <a id="1">[1]</a> HUANG, R., SHENG, H., Qian, C. H. E. N., Ziting, R. A. N., Zhen, X. U. E., Jiacheng, L. I., & Tong, L. I. U. (2024). Adaptive configuration control of combined UAVs based on leader-wingman mode. Chinese Journal of Aeronautics.
-
+<a id="2">[2]</a> N. Gandhi, D. Saldana, V. Kumar, and L. T. X. Phan, “Self-reconfiguration in response to faults in modular aerial systems,” IEEE Robotics and Automation Letters, vol. 5, no. 2, pp. 2522–2529, 2020.
