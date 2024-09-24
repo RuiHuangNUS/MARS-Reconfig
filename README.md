@@ -25,6 +25,7 @@ Please find out more details in our paper: "Robust Self-Reconfiguration for Faul
   (a)  Before Re-configuration    |   (b) After Re-configuration (Ours) 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_fault_track.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_self_reconfiguration_track.gif)
+
 Advantages:
 More control authority – Improved robustness against unit faulty
 Improved trajectory tracking performance
@@ -36,6 +37,7 @@ We Calculate the optimal configuration with maximum remaining control authority 
   (a) Calculate the Optimal Reconfiguration in a 3×2 assembly     |   (b) Calculate the Optimal Reconfiguration in a 3×3 assembly 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x3.gif)
+
 Advantages:
 No need for optimization with an objective function (Less time consumption)
 The optimal configuration ensures controllability and is theoretically guaranteed
@@ -45,6 +47,7 @@ We designed the Minimum Controllable Subassembly to enable the transfer of fault
 <div align="center">
   <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/self_reconfiguration_flow.png?raw=true" alt="diagram" width="400"/>
 </div>
+
 Advantages:
 The minimum controllable subassembly ensures the safety of faulty units
 
@@ -55,6 +58,7 @@ The minimum controllable subassembly ensures the safety of faulty units
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x2.gif)
  (c) 3×3 assembly: full disassembly  |   (d) 3×3 assembly: partial disassembly 
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x3.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x3.gif)
+
 Advantages:
 Each step of disassembly and assembly is ensured to be theoretically optimal
 
@@ -65,6 +69,7 @@ Each step of disassembly and assembly is ensured to be theoretically optimal
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_comparison.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_comparison_origin.gif)
  (c) 3×3 assembly: full disassembly  |   (d) 3×3 assembly: partial disassembly 
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_full.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_partial.gif)
+
 Advantages:
 Higher controllability margins (Control robustness)
 With improvements of up to 264.50% (blue) and 138.63% (green) compared to [2].
