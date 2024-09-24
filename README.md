@@ -58,6 +58,7 @@ The minimum controllable subassembly ensures the safety of faulty units
 ### 2.3 Examples
 
 |                     Self-reconfiguration flow after failure of one unit             |
+:----------------------------------------------------------------------------------------------------------------------------------:
  (a) 3×2 assembly: full disassembly  |   (b) 3×2 assembly: partial disassembly 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x2.gif)
