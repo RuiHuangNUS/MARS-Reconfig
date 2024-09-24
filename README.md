@@ -12,7 +12,6 @@ https://youtu.be/SB0hwK33088
 MARS is tasked to track a spiral trajectory with two faulty units. The faulty propellers are marked red. (a) MARS crashed after the complete failure of two units (all rotors are broken). (b) MARS can track trajectories after self-reconfiguration. 
 
 Please find out more details in our paper: "Robust Self-Reconfiguration for Fault-Tolerant Control of Modular Aerial Robot Systems" 
-
 ## Table of contents
 1. [Project Overview](#project-Overview)
 2. [Dependency Packages](#Dependency-Packages)
@@ -20,6 +19,43 @@ Please find out more details in our paper: "Robust Self-Reconfiguration for Faul
       1. [A: Distributed Learning of Adaptive Weightings](#A-Distributed-Learning-of-Adaptive-Weightings)
       2. [B: Distributed Learning of Adaptive References](#B-Distributed-Learning-of-Adaptive-References)
 4. [Contact Us](#Contact-Us)
+
+## Why Self-Reconfiguration?
+  (a)  Before Re-configuration    |   (b) After Re-configuration (Ours) 
+:---------------------------------------------------------------:|:--------------------------------------------------------------:
+![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_fault_track.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_self_reconfiguration_track.gif)
+
+## How to Self-Reconfigure?
+1. Quantifying the Optimal Configuration
+We Calculate the optimal configuration with maximum remaining control authority using controllability margin (CM)
+  (a) Calculate the Optimal Reconfiguration in a 3×2 assembly     |   (b) Calculate the Optimal Reconfiguration in a 3×3 assembly 
+:---------------------------------------------------------------:|:--------------------------------------------------------------:
+![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x3.gif)
+2. Ensures the safe transfer of all units
+We designed the Minimum Controllable Subassembly to enable the transfer of faulty units.
+<div align="center">
+  <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/self_reconfiguration_flow.png?raw=true" alt="diagram" width="400"/>
+</div>
+3. Examples
+ (a) 3×2 assembly: full disassembly  |   (b) 3×2 assembly: partial disassembly 
+:---------------------------------------------------------------:|:--------------------------------------------------------------:
+![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x2.gif)
+ (c) 3×3 assembly: full disassembly  |   (d) 3×3 assembly: partial disassembly 
+:---------------------------------------------------------------:|:--------------------------------------------------------------:
+![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x3.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x3.gif)
+
+## Comparison with the baseline method[1]
+ (a) 3×2 assembly: full disassembly  |   (b) 3×2 assembly: partial disassembly 
+:---------------------------------------------------------------:|:--------------------------------------------------------------:
+![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_comparison.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_comparison_origin.gif)
+ (c) 3×3 assembly: full disassembly  |   (d) 3×3 assembly: partial disassembly 
+:---------------------------------------------------------------:|:--------------------------------------------------------------:
+![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_full.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_partial.gif)
+
+## Trajectory tracking
+<div align="center">
+  <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/Fig1.png?raw=true" alt="diagram" width="400"/>
+</div>
 
 ## 1. Project Overview
 The project consists of two folders, which correspond to the **Algorithm** and **Simulation** in the paper that show the following two advantages of our method.
@@ -76,35 +112,17 @@ All the control methods of different configurations are based on previous works 
 5. To evaluate the trained model, run the Python file '**main_distributed_acados_tensionref_evaluation.py**'
    * You can skip Step 4 and evaluate the saved models that were previously trained and employed in the paper. To do so, copy the files that end with '.pt' from the folder '**Previously trained models**' (within the folder '**Source code B**') to the folder '**trained data**' (where the retained models via Step 4 will be saved).
 
-### C: Simulation 1: Full disassembly in a 3×2 assembly
-1. Open the file '**test.ttt**' in the folder '**Simulation**'
-<div align="center">
-<img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_full.gif" width="400">
-</div>
-
-### D: Simulation 2: Partial disassembly in a 3×2 assembly
-1. Open the file '**test.ttt**' in the folder '**Simulation**'
-<div align="center">
-<img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_partial.gif" width="400">
-</div>
-
-### E: Simulation 3: Full disassembly in a 3×3 assembly
-1. Open the file '**test.ttt**' in the folder '**Simulation**'
+### C: Simulation 3: Full disassembly in a 3×3 assembly
+1. Simulation 1: Full disassembly in a 3×2 assembly
+2. Simulation 2: Partial disassembly in a 3×2 assembly
+3. Simulation 3: Full disassembly in a 3×3 assembly
+4. Simulation 4: Partial disassembly in a 3×3 assembly
+1.Full disassembly in a 3×3 assembly: Open the file '**test.ttt**' in the folder '**Simulation**'
 
   Full self-reconfiguration in a 3×2 assembly (one failure)      |   Partial self-reconfiguration in a 3×2 assembly (one failure) 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_full.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x3.gif)
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
-
-
-### F: Simulation 4: Partial disassembly in a 3×3 assembly
-1. Open the file '**test.ttt**' in the folder '**Simulation**'
-<div align="center">
-<img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_partial.gif" width="400">
-</div>
-
-### G: Example 1: Self-reconfiguration flow after failure of unit No.3 in a 3×2 assembly
-1. Open the file '**test.ttt**' in the folder '**Simulation**'
 
 ## 4. Contact Us
 If you encounter a bug in your implementation of the code, please do not hesitate to inform me.
