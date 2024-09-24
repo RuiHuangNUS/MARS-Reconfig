@@ -27,8 +27,8 @@ Please find out more details in our paper: "Robust Self-Reconfiguration for Faul
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_fault_track.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_self_reconfiguration_track.gif)
 
 Advantages:
-More control authority – Improved robustness against unit faulty
-Improved trajectory tracking performance
+1. More control authority – Improved robustness against unit faulty
+2. Improved trajectory tracking performance
 
 ## How to Self-Reconfigure?
 1. Quantifying the Optimal Configuration
@@ -39,8 +39,8 @@ We Calculate the optimal configuration with maximum remaining control authority 
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x3.gif)
 
 Advantages:
-No need for optimization with an objective function (Less time consumption)
-The optimal configuration ensures controllability and is theoretically guaranteed
+1. No need for optimization with an objective function (Less time consumption)
+2. The optimal configuration ensures controllability and is theoretically guaranteed
 
 2. Ensures the safe transfer of all units
 We designed the Minimum Controllable Subassembly to enable the transfer of faulty units.
@@ -71,19 +71,19 @@ Each step of disassembly and assembly is ensured to be theoretically optimal
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_full.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_partial.gif)
 
 Advantages:
-Higher controllability margins (Control robustness)
-With improvements of up to 264.50% (blue) and 138.63% (green) compared to [2].
-Fewer disassembly and assembly times (save energy and time)
-Reducing the number of steps by 81.81% and 45.45%, respectively.
-Less oscillation in the reassembled drone after docking and separation.
+1. Higher controllability margins (Control robustness)
+2. With improvements of up to 264.50% (blue) and 138.63% (green) compared to [2].
+3. Fewer disassembly and assembly times (save energy and time)
+4. Reducing the number of steps by 81.81% and 45.45%, respectively.
+5. Less oscillation in the reassembled drone after docking and separation.
 
 ## Trajectory tracking
 <div align="center">
   <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_full_track.gif?raw=true" alt="diagram" width="400"/>
 </div>
 Advantages:
-No oscillation during trajectory switching after self-reconfiguration
-Improved trajectory tracking after self-reconfiguration
+1. No oscillation during trajectory switching after self-reconfiguration
+2. Improved trajectory tracking after self-reconfiguration
 
 ## 1. Project Overview
 The project consists of two folders, which correspond to the **Algorithm** and **Simulation** in the paper that show the following two advantages of our method.
