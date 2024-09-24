@@ -16,13 +16,14 @@ The project consists of two folders, which correspond to the **Algorithm** and *
 MARS is tasked to track a spiral trajectory with two faulty units. The faulty propellers are marked red. (a) MARS crashed after the complete failure of two units (all rotors are broken). (b) MARS can track trajectories after self-reconfiguration. 
 
 Please find out more details in our paper: "Robust Self-Reconfiguration for Fault-Tolerant Control of Modular Aerial Robot Systems" 
-## Table of contents
+
+<!-- ## Table of contents
 1. [Project Overview](#project-Overview)
 2. [Dependency Packages](#Dependency-Packages)
 3. [How to Use](#How-to-Use)
       1. [A: Distributed Learning of Adaptive Weightings](#A-Distributed-Learning-of-Adaptive-Weightings)
       2. [B: Distributed Learning of Adaptive References](#B-Distributed-Learning-of-Adaptive-References)
-4. [Contact Us](#Contact-Us)
+4. [Contact Us](#Contact-Us) -->
 
 ## 1 Why Self-Reconfiguration?
 
