@@ -85,6 +85,7 @@ Advantages:
 <div align="center">
   <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_full_track.gif?raw=true" alt="diagram" width="400"/>
 </div>
+
 Advantages:
 1. No oscillation during trajectory switching after self-reconfiguration
 2. Improved trajectory tracking after self-reconfiguration
