@@ -90,6 +90,7 @@ All the control methods of different configurations are based on previous works 
 
 ### E: Simulation 4: Full disassembly in a 3×3 assembly
 1. Open the file '**test.ttt**' in the folder '**Simulation**'
+
                                                 Ours             |                                                      Comparison
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_full.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x2.gif)
