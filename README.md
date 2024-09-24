@@ -45,7 +45,6 @@ We designed the Minimum Controllable Subassembly to enable the transfer of fault
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x2.gif)
  (c) 3×3 assembly: full disassembly  |   (d) 3×3 assembly: partial disassembly 
-:---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x3.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x3.gif)
 
 ## Comparison with the baseline method[1]
@@ -54,7 +53,6 @@ We designed the Minimum Controllable Subassembly to enable the transfer of fault
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_comparison.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_comparison_origin.gif)
  (c) 3×3 assembly: full disassembly  |   (d) 3×3 assembly: partial disassembly 
-:---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_full.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_partial.gif)
 
 ## Trajectory tracking
