@@ -1,6 +1,6 @@
 # MARS-Reconfig (coming soon)
 The **MARS-Reconfig** is a 
-|                     A video  of this paper             |
+|                     A video  of this project             |
 :----------------------------------------------------------------------------------------------------------------------------------:
 [![NetFlix on UWP](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/movie_cover.png?raw=true)](https://youtu.be/SB0hwK33088 "NetFlix on UWP")
 https://youtu.be/SB0hwK33088
@@ -57,7 +57,7 @@ We designed the Minimum Controllable Subassembly to enable the transfer of fault
 
 ## Trajectory tracking
 <div align="center">
-  <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/Fig1.png?raw=true" alt="diagram" width="400"/>
+  <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_full_track.gif?raw=true" alt="diagram" width="400"/>
 </div>
 
 ## 1. Project Overview
