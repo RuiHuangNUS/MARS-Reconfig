@@ -1,4 +1,4 @@
-# MARS-Reconfig (coming soon)
+# MARS-Reconfig
 
 ## Project Overview
 The project **MARS-Reconfig** consists of two folders, which correspond to the **Algorithm** and **Simulation** in the paper that show the following two advantages of our method.
@@ -90,7 +90,7 @@ Advantages:
 1. No oscillation during trajectory switching after self-reconfiguration
 2. Improved trajectory tracking after self-reconfiguration
 
-## 5 How to Use
+## 5 How to Use (coming soon)
 First and foremost, the implementation for Auto-Multilift is straightforward to setup. The source code has been comprehensively annotated to facilitate ease of use. To reproduce the simulation results presented in the paper, simply follow the steps outlined below, sequentially, after downloading and decompressing all the necessary folders.
 All the control methods of different configurations are based on previous works [[1]](#1).
 
