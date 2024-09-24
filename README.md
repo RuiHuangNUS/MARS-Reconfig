@@ -78,9 +78,9 @@ All the control methods of different configurations are based on previous works 
 
 ### C: Simulation 1: Full disassembly in a 3×2 assembly
 1. Open the file '**test.ttt**' in the folder '**Simulation**'
-<img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_full.gif" width="300" height="200">
-
-#![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_full.gif)
+<div align="center">
+<img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_full.gif" width="400">
+</div>
 
 ### D: Simulation 2: Partial disassembly in a 3×2 assembly
 1. Open the file '**test.ttt**' in the folder '**Simulation**'
