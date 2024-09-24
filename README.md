@@ -26,9 +26,9 @@ MARS is tasked to track a spiral trajectory with two faulty units. The faulty pr
 
 ## 1 Why Self-Reconfiguration?
 
+  (a)  Before Re-configuration    |   (b) After Re-configuration (Ours) 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_fault_track.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_self_reconfiguration_track.gif)
-  (a)  Before Re-configuration    |   (b) After Re-configuration (Ours) 
 
 Advantages:
 1. More control authority – Improved robustness against unit faulty
