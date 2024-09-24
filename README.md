@@ -9,6 +9,10 @@ https://youtu.be/SB0hwK33088
   <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/Fig1.png?raw=true" alt="diagram" width="400"/>
 </div>
 
+## Project Overview
+The project consists of two folders, which correspond to the **Algorithm** and **Simulation** in the paper that show the following two advantages of our method.
+1. We propose an efficient controllability analysis for MARS using a quasi-static model under control constraints.
+2. We propose a novel controllability margin (CM)--based method for calculating optimal self-reconfiguration sequences.
 MARS is tasked to track a spiral trajectory with two faulty units. The faulty propellers are marked red. (a) MARS crashed after the complete failure of two units (all rotors are broken). (b) MARS can track trajectories after self-reconfiguration. 
 
 Please find out more details in our paper: "Robust Self-Reconfiguration for Fault-Tolerant Control of Modular Aerial Robot Systems" 
@@ -20,7 +24,7 @@ Please find out more details in our paper: "Robust Self-Reconfiguration for Faul
       2. [B: Distributed Learning of Adaptive References](#B-Distributed-Learning-of-Adaptive-References)
 4. [Contact Us](#Contact-Us)
 
-## Why Self-Reconfiguration?
+## 1 Why Self-Reconfiguration?
 
   (a)  Before Re-configuration    |   (b) After Re-configuration (Ours) 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
@@ -30,8 +34,8 @@ Advantages:
 1. More control authority – Improved robustness against unit faulty
 2. Improved trajectory tracking performance
 
-## How to Self-Reconfigure?
-### 1.Quantifying the Optimal Configuration
+## 2 How to Self-Reconfigure?
+### 2.1 Quantifying the Optimal Configuration
 
 We Calculate the optimal configuration with maximum remaining control authority using controllability margin (CM)
   (a) Calculate the Optimal Reconfiguration in a 3×2 assembly     |   (b) Calculate the Optimal Reconfiguration in a 3×3 assembly 
@@ -42,7 +46,7 @@ Advantages:
 1. No need for optimization with an objective function (Less time consumption)
 2. The optimal configuration ensures controllability and is theoretically guaranteed
 
-### 2.Ensures the safe transfer of all units
+### 2.2 Ensures the safe transfer of all units
 We designed the Minimum Controllable Subassembly to enable the transfer of faulty units.
 <div align="center">
   <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/self_reconfiguration_flow.png?raw=true" alt="diagram" width="400"/>
@@ -51,7 +55,7 @@ We designed the Minimum Controllable Subassembly to enable the transfer of fault
 Advantages:
 The minimum controllable subassembly ensures the safety of faulty units
 
-### 3.Examples
+### 2.3 Examples
 
  (a) 3×2 assembly: full disassembly  |   (b) 3×2 assembly: partial disassembly 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
@@ -62,7 +66,7 @@ The minimum controllable subassembly ensures the safety of faulty units
 Advantages:
 Each step of disassembly and assembly is ensured to be theoretically optimal
 
-## Comparison with the baseline method[2]
+## 3 Comparison with the baseline method[2]
 
  (a) 3×2 assembly: full disassembly  |   (b) 3×2 assembly: partial disassembly 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
@@ -77,7 +81,7 @@ Advantages:
 4. Reducing the number of steps by 81.81% and 45.45%, respectively.
 5. Less oscillation in the reassembled drone after docking and separation.
 
-## Trajectory tracking
+## 4 Trajectory tracking
 <div align="center">
   <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_full_track.gif?raw=true" alt="diagram" width="400"/>
 </div>
@@ -85,21 +89,16 @@ Advantages:
 1. No oscillation during trajectory switching after self-reconfiguration
 2. Improved trajectory tracking after self-reconfiguration
 
-## 1. Project Overview
-The project consists of two folders, which correspond to the **Algorithm** and **Simulation** in the paper that show the following two advantages of our method.
-1. We propose an efficient controllability analysis for MARS using a quasi-static model under control constraints.
-2. We propose a novel controllability margin (CM)--based method for calculating optimal self-reconfiguration sequences.
+## 5 How to Use
+First and foremost, the implementation for Auto-Multilift is straightforward to setup. The source code has been comprehensively annotated to facilitate ease of use. To reproduce the simulation results presented in the paper, simply follow the steps outlined below, sequentially, after downloading and decompressing all the necessary folders.
+All the control methods of different configurations are based on previous works [[1]](#1).
 
-## 2. Dependency Packages
+### 5.1 Dependency Packages
 Please make sure that the following packages have already been installed before running the source code.
 * CoppeliaSim: version 4.6.0 Info: https://www.coppeliarobotics.com/
 * imageio: version X.x.x Info: https://scikit-learn.org/stable/whats_new/v1.0.html
 
-## 3. How to Use
-First and foremost, the implementation for Auto-Multilift is straightforward to setup. The source code has been comprehensively annotated to facilitate ease of use. To reproduce the simulation results presented in the paper, simply follow the steps outlined below, sequentially, after downloading and decompressing all the necessary folders.
-All the control methods of different configurations are based on previous works [[1]](#1).
-
-### A: Algorithm 1 Find Optimal Reconfiguration
+### 5.2 Algorithm 1 Find Optimal Reconfiguration
 
 1. Open the Python file '**Algorithm1_Find_Optimal_Reconfiguration.py**' in the folder '**Algorithm**'
 2. Before running, please do the following settings:
@@ -108,7 +107,7 @@ All the control methods of different configurations are based on previous works 
    * Set the MPC horizon on line 52 (the default value is 10).
    * Set the higher-level loss horizon on line 53 (the default value is 20).
 
-### B: Algorithm 3 Plan Disassembly and Assembly Sequence
+### 5.3 Algorithm 3 Plan Disassembly and Assembly Sequence
 
 1. Open the Python file '**XXX.py**' in the folder '**Algorithm**'
 2. Before running, please do the following settings:
@@ -117,14 +116,14 @@ All the control methods of different configurations are based on previous works 
    * Set the MPC horizon on line 52 (the default value is 10).
    * Set the higher-level loss horizon on line 53 (the default value is 20).
 
-### C: Simulation
+### 5.4 Simulation
 1. Simulation 1: Full disassembly in a 3×2 assembly
 2. Simulation 2: Partial disassembly in a 3×2 assembly
 3. Simulation 3: Full disassembly in a 3×3 assembly
 4. Simulation 4: Partial disassembly in a 3×3 assembly
 1.Full disassembly in a 3×3 assembly: Open the file '**test.ttt**' in the folder '**Simulation**'
 
-## 4. Contact Us
+## 6 Contact Us
 If you encounter a bug in your implementation of the code, please do not hesitate to inform me.
 * Name: Mr. Rui Huang
 * Email: ruihuang@nus.edu.sg
