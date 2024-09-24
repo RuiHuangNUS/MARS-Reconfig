@@ -1,3 +1,5 @@
+# multirotor_rotor_error.py
+
 import numpy as np
 from scipy.linalg import null_space
 from itertools import combinations
@@ -9,52 +11,12 @@ Jx = 0.0113
 Jy = 0.0121
 Jz = 0.0206
 w = 0.53  # m
-m_unit = 0.925 # kg
+m_unit = 0.825 #kg
 umin = 0     # N
 umax = 5.125 # N
-d = 0.16975 # m
+d = 0.16975 #m
 k_u = 0.1
 
-def generate_position_lists(M, N):
-    # Configuration for positions
-    # x_position_list and y_position_list are initially defined here
-    # 3x3
-    # 07-08-09
-    # 04-05-06
-    # 01-02-03
-    # x_position_list = np.array([-w, -w, -w, 0, 0, 0, w, w, w])
-    # y_position_list = np.array([-w, 0, w, -w, 0, w, -w, 0, w])
-    # 3x3
-    # 04-05-06
-    # 01-02-03
-    # x_position_list = np.array([-0.5*w, 0, 0.5*w, -0.5*w, 0, 0.5*w])
-    # y_position_list = np.array([-0.5*w, -0.5*w, -0.5*w, 0.5*w, 0.5*w, 0.5*w])
-    # Create grid of positions centered around (0, 0)
-    
-    # linspace generates M or N equally spaced values in the range
-    x_values = np.linspace(-(M-1)/2 * w, (M-1)/2 * w, M)
-    y_values = np.linspace(-(N-1)/2 * w, (N-1)/2 * w, N)
-    
-    # Use meshgrid to create the full grid of positions
-    x_grid, y_grid = np.meshgrid(x_values, y_values)
-    
-    # Flatten the grids to generate the position lists
-    x_position_list = x_grid.flatten()
-    y_position_list = y_grid.flatten()
-    
-    return x_position_list, y_position_list
-
-def calculate_center_of_mass(x_position_list, y_position_list):
-    """计算给定位置列表的重心"""
-    x_center_of_mass = np.mean(x_position_list)
-    y_center_of_mass = np.mean(y_position_list)
-    return x_center_of_mass, y_center_of_mass
-
-def adjust_relative_positions(x_position_list, y_position_list, x_center_of_mass, y_center_of_mass):
-    """根据重心调整位置列表"""
-    x_position_list_adjusted = x_position_list - x_center_of_mass
-    y_position_list_adjusted = y_position_list - y_center_of_mass
-    return x_position_list_adjusted, y_position_list_adjusted
 
 def J_combination(X_position_list, Y_position_list, n_unit, ma):
     Jx_combination = Jx * n_unit + ma * np.sum(Y_position_list**2)
@@ -115,22 +77,20 @@ def acai(Bf, fcmin, fcmax, Tg):
     
     return degree
 
-def Calculate_CM(error_id,M,N):  
+def main(error_id, x_position_list, y_position_list):
     # Number of units
-    x_position_list, y_position_list = generate_position_lists(M, N)
     n_unit = len(x_position_list)
-    
-    # 计算重心
-    x_center_of_mass, y_center_of_mass = calculate_center_of_mass(x_position_list, y_position_list)
-    
-    # 调整位置使得重心位于坐标系的中心
-    x_position_list_adj, y_position_list_adj = adjust_relative_positions(x_position_list, y_position_list, x_center_of_mass, y_center_of_mass)
+
+    # TODO: delete normalization
+    central = np.array([np.sum(x_position_list)/n_unit, np.sum(y_position_list)/n_unit])
+    x_position_list = x_position_list - np.sum(x_position_list)/n_unit
+    y_position_list = y_position_list - np.sum(y_position_list)/n_unit
     
     # Mass of the multirotor helicopter
     ma = m_unit * n_unit  # kg
     
     # Moment of inertia (example quadrotor unit configurations)
-    Jx_comb, Jy_comb, Jz_comb = J_combination(x_position_list_adj, y_position_list_adj, n_unit, ma)
+    Jx_comb, Jy_comb, Jz_comb = J_combination(x_position_list, y_position_list, n_unit, ma)
     Jf = np.diag([-ma, Jx_comb, Jy_comb, Jz_comb])
     
     # Matrix A and B for system dynamics
@@ -158,25 +118,17 @@ def Calculate_CM(error_id,M,N):
             rotor_Yita = np.array([1, 1, 1, 1])
             rotor_angle = np.array([45, 135, 225, 315])
             rotor_dir = np.array([s2i['anticlockwise'], s2i['clockwise'], s2i['anticlockwise'], s2i['clockwise']])
-        elif error_id[i] == 2:  #
+        elif error_id[i] == 2:  # Compare
             rotor_Yita = np.array([0, 0, 1, 1])
             rotor_angle = np.array([45, 135, 225, 315])
             rotor_dir = np.array([s2i['anticlockwise'], s2i['clockwise'], s2i['anticlockwise'], s2i['clockwise']])
-        elif error_id[i] == 3:  # 逆时针旋转90度
-            rotor_Yita = np.array([0, 0, 1, 1])
-            rotor_angle = np.array([315, 45,135, 225]) 
-            rotor_dir = np.array([s2i['anticlockwise'], s2i['clockwise'], s2i['anticlockwise'], s2i['clockwise']])
-        elif error_id[i] == 4:  # 逆时针旋转180度
-            rotor_Yita = np.array([0, 0, 1, 1])
-            rotor_angle = np.array([225, 315, 45,135])
-            rotor_dir = np.array([s2i['anticlockwise'], s2i['clockwise'], s2i['anticlockwise'], s2i['clockwise']])
-        elif error_id[i] == 5:  # 逆时针旋转270度
+        elif error_id[i] == 3:  # Ours
             rotor_Yita = np.array([0, 0, 1, 1])
             rotor_angle = np.array([135, 225, 315, 45])
             rotor_dir = np.array([s2i['anticlockwise'], s2i['clockwise'], s2i['anticlockwise'], s2i['clockwise']])
         # Additional configurations can be added here as needed
 
-        sz_temp, Bf_temp, Tg_temp = Obtain_Bf_Tg(rotor_angle, rotor_dir, rotor_ku, rotor_d, Rotors, rotor_Yita, x_position_list_adj[i], y_position_list_adj[i], ma)
+        sz_temp, Bf_temp, Tg_temp = Obtain_Bf_Tg(rotor_angle, rotor_dir, rotor_ku, rotor_d, Rotors, rotor_Yita, x_position_list[i], y_position_list[i], ma)
         sz += sz_temp
         Bf.append(Bf_temp)
     
@@ -208,15 +160,29 @@ def Calculate_CM(error_id,M,N):
     total_time = end_time - start_time
     
     # Determine controllability
-    if n < A.shape[0] or ACAI <= 0:
-        print('Uncontrollable')
-    else:
-        print('Controllable')
+    # if n < A.shape[0] or ACAI <= 0:
+    #     print('Uncontrollable')
+    # else:
+    #     print('Controllable')
     return ACAI
 
 if __name__ == "__main__":
     # Example default error_id
-    error_id = np.array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
-    M=3
-    N=2
-    Calculate_CM(error_id,M,N)
+    # Configuration for positions
+    # x_position_list = np.array([w, 0, 0, 0, -w])
+    # y_position_list = np.array([0, -w, 0, w, 0])
+    # error_id = np.array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+
+    # x_position_list = np.array([0, -w, 0, w])
+    # y_position_list = np.array([-w, 0, 0, 0])
+    # error_id = np.array([1, 1, 1, 0])
+
+    # x_position_list = np.array([-w, -w, 0, 0, w])
+    # y_position_list = np.array([w, 0, 0, -w, -w])
+    # error_id = np.array([1, 1, 0, 1, 1])
+
+    x_position_list = np.array([0, 0, w, 2*w, 2*w])
+    y_position_list = np.array([w, 0, 0, 0, -w])
+    error_id = np.array([1, 1, 1, 0, 1])
+    main(error_id, x_position_list, y_position_list)
+
