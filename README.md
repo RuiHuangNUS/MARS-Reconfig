@@ -70,8 +70,6 @@ The project consists of two folders, which correspond to the **Algorithm** and *
 Please make sure that the following packages have already been installed before running the source code.
 * CoppeliaSim: version 4.6.0 Info: https://www.coppeliarobotics.com/
 * imageio: version X.x.x Info: https://scikit-learn.org/stable/whats_new/v1.0.html
-* matplotlib: version X.x.x Info: https://scikit-learn.org/stable/whats_new/v1.0.html
-* matplotlib: version X.x.x Info: https://scikit-learn.org/stable/whats_new/v1.0.html
 
 ## 3. How to Use
 First and foremost, the implementation for Auto-Multilift is straightforward to setup. The source code has been comprehensively annotated to facilitate ease of use. To reproduce the simulation results presented in the paper, simply follow the steps outlined below, sequentially, after downloading and decompressing all the necessary folders.
@@ -85,12 +83,6 @@ All the control methods of different configurations are based on previous works 
    * Set the load mass value on line 43 (i.e., the first number in the 'load_para' array).
    * Set the MPC horizon on line 52 (the default value is 10).
    * Set the higher-level loss horizon on line 53 (the default value is 20).
-4. After completing the above settings, run the file '**main_distributed_autotuning_acados.py**'. In the prompted terminal interface, you will be asked to select the control and sensitivity propagation modes.
-   * In our settings, 's' and 'p' denote 'sequential' and 'parallel' computing, respectively.
-   * 'c' and 'o' represent 'closed-loop' (our method) and 'open-loop' (the Safe-PDP method [[1]](#1)) training modes.
-5. To evaluate the trained model, run the Python file '**main_distributed_autotuning_evaluation_acados.py**'
-   * You can skip Step 4 and evaluate the saved models that were previously trained and employed in the paper. To do so, copy the files that end with '.pt' from the folder '**Previously trained models**' (within the folder '**Source code A**') to the folder '**trained data**' (where the retained models via Step 4 will be saved).
-
 
 ### B: Algorithm 3 Plan Disassembly and Assembly Sequence
 
@@ -100,10 +92,6 @@ All the control methods of different configurations are based on previous works 
    * Set the load mass value on line 43 (i.e., the first number in the 'load_para' array).
    * Set the MPC horizon on line 52 (the default value is 10).
    * Set the higher-level loss horizon on line 53 (the default value is 20).
-4. After completing the above settings, run the file '**main_distributed_autotuning_acados_tensionref.py**'. In the prompted terminal interface, you will be asked to select the control and sensitivity propagation modes.
-   * In our settings, 's' and 'p' denote 'sequential' and 'parallel' computing, respectively.
-5. To evaluate the trained model, run the Python file '**main_distributed_acados_tensionref_evaluation.py**'
-   * You can skip Step 4 and evaluate the saved models that were previously trained and employed in the paper. To do so, copy the files that end with '.pt' from the folder '**Previously trained models**' (within the folder '**Source code B**') to the folder '**trained data**' (where the retained models via Step 4 will be saved).
 
 ### C: Simulation 3: Full disassembly in a 3×3 assembly
 1. Simulation 1: Full disassembly in a 3×2 assembly
