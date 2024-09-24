@@ -66,7 +66,7 @@ The minimum controllable subassembly ensures the safety of faulty units
 Advantages:
 Each step of disassembly and assembly is ensured to be theoretically optimal
 
-## 3 Comparison with the baseline method[2]
+## 3 Comparison with the baseline method [[2]](#2)
 
  (a) 3×2 assembly: full disassembly  |   (b) 3×2 assembly: partial disassembly 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
@@ -76,7 +76,7 @@ Each step of disassembly and assembly is ensured to be theoretically optimal
 
 Advantages:
 1. Higher controllability margins (Control robustness)
-2. With improvements of up to 264.50% (blue) and 138.63% (green) compared to [2].
+2. With improvements of up to 264.50% (blue) and 138.63% (green) compared to [[2]](#2).
 3. Fewer disassembly and assembly times (save energy and time)
 4. Reducing the number of steps by 81.81% and 45.45%, respectively.
 5. Less oscillation in the reassembled drone after docking and separation.
@@ -117,11 +117,11 @@ Please make sure that the following packages have already been installed before 
    * Set the higher-level loss horizon on line 53 (the default value is 20).
 
 ### 5.4 Simulation
-1. Simulation 1: Full disassembly in a 3×2 assembly
-2. Simulation 2: Partial disassembly in a 3×2 assembly
-3. Simulation 3: Full disassembly in a 3×3 assembly
-4. Simulation 4: Partial disassembly in a 3×3 assembly
-1.Full disassembly in a 3×3 assembly: Open the file '**test.ttt**' in the folder '**Simulation**'
+1. Simulation 1: Full disassembly in a 3×2 assembly, Open the file '**test.ttt**' in the folder '**Simulation**'
+2. Simulation 2: Partial disassembly in a 3×2 assembly, Open the file '**test.ttt**' in the folder '**Simulation**'
+3. Simulation 3: Full disassembly in a 3×3 assembly, Open the file '**test.ttt**' in the folder '**Simulation**'
+4. Simulation 4: Partial disassembly in a 3×3 assembly, Open the file '**test.ttt**' in the folder '**Simulation**'
+
 
 ## 6 Contact Us
 If you encounter a bug in your implementation of the code, please do not hesitate to inform me.
