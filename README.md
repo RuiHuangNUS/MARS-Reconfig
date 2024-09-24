@@ -80,9 +80,6 @@ First and foremost, the implementation for Auto-Multilift is straightforward to 
 All the control methods of different configurations are based on previous works [[1]](#1).
 
 ### A: Algorithm 1 Find Optimal Reconfiguration
-  CM calculation in a 3×2 assembly (one failure)    |   CM calculation in a 3×3 assembly (one failure) 
-:---------------------------------------------------------------:|:--------------------------------------------------------------:
-![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x3.gif)
 
 1. Open the Python file '**Algorithm1_Find_Optimal_Reconfiguration.py**' in the folder '**Algorithm**'
 2. Before running, please do the following settings:
@@ -98,13 +95,6 @@ All the control methods of different configurations are based on previous works 
 
 
 ### B: Algorithm 3 Plan Disassembly and Assembly Sequence
-  Full self-reconfiguration in a 3×2 assembly (one failure)      |   Partial self-reconfiguration in a 3×2 assembly (one failure) 
-:---------------------------------------------------------------:|:--------------------------------------------------------------:
-![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x2.gif)
-
-  Full self-reconfiguration in a 3×3 assembly (one failure)    |   Partial self-reconfiguration in a 3×3 assembly (one failure) 
-:---------------------------------------------------------------:|:--------------------------------------------------------------:
-![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/full_self_reconfiguration_3x3.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x3.gif)
 
 1. Open the Python file '**XXX.py**' in the folder '**Algorithm**'
 2. Before running, please do the following settings:
@@ -123,11 +113,6 @@ All the control methods of different configurations are based on previous works 
 3. Simulation 3: Full disassembly in a 3×3 assembly
 4. Simulation 4: Partial disassembly in a 3×3 assembly
 1.Full disassembly in a 3×3 assembly: Open the file '**test.ttt**' in the folder '**Simulation**'
-
-  Full self-reconfiguration in a 3×2 assembly (one failure)      |   Partial self-reconfiguration in a 3×2 assembly (one failure) 
-:---------------------------------------------------------------:|:--------------------------------------------------------------:
-![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_full.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/partial_self_reconfiguration_3x3.gif)
-:---------------------------------------------------------------:|:--------------------------------------------------------------:
 
 ## 4. Contact Us
 If you encounter a bug in your implementation of the code, please do not hesitate to inform me.
