@@ -21,16 +21,19 @@ Please find out more details in our paper: "Robust Self-Reconfiguration for Faul
 4. [Contact Us](#Contact-Us)
 
 ## Why Self-Reconfiguration?
+
   (a)  Before Re-configuration    |   (b) After Re-configuration (Ours) 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_fault_track.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_self_reconfiguration_track.gif)
 
 ## How to Self-Reconfigure?
 1. Quantifying the Optimal Configuration
+
 We Calculate the optimal configuration with maximum remaining control authority using controllability margin (CM)
   (a) Calculate the Optimal Reconfiguration in a 3×2 assembly     |   (b) Calculate the Optimal Reconfiguration in a 3×3 assembly 
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x2.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/robot_configuration_3x3.gif)
+
 2. Ensures the safe transfer of all units
 We designed the Minimum Controllable Subassembly to enable the transfer of faulty units.
 <div align="center">
