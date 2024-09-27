@@ -125,6 +125,6 @@ If you encounter a bug in your implementation of the code, please do not hesitat
 * Email: ruihuang@nus.edu.sg
 
 ## References
-<a id="1">[1]</a> HUANG, R., SHENG, H., Qian, C. H. E. N., Ziting, R. A. N., Zhen, X. U. E., Jiacheng, L. I., & Tong, L. I. U. (2024). Adaptive configuration control of combined UAVs based on leader-wingman mode. Chinese Journal of Aeronautics.
+<a id="1">[1]</a> R. HUANG, H. SHENG, C. Qian, R. Ziting, X. Zhen, L. Jiacheng, and L. Tong, “Adaptive configuration control of combined uavs based on leader-wingman mode,” Chinese Journal of Aeronautics, 2024.
 
 <a id="2">[2]</a> N. Gandhi, D. Saldana, V. Kumar, and L. T. X. Phan, “Self-reconfiguration in response to faults in modular aerial systems,” IEEE Robotics and Automation Letters, vol. 5, no. 2, pp. 2522–2529, 2020.
