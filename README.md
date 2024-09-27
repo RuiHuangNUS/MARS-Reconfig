@@ -118,10 +118,10 @@ Please make sure that the following packages have already been installed before 
    * Set the higher-level loss horizon on line 53 (the default value is 20).
 
 ### 5.4 Simulation
-1. Simulation 1: Full disassembly in a 3×2 assembly, Open the file '**test.ttt**' in the folder '**Simulation**'
-2. Simulation 2: Partial disassembly in a 3×2 assembly, Open the file '**test.ttt**' in the folder '**Simulation**'
-3. Simulation 3: Full disassembly in a 3×3 assembly, Open the file '**test.ttt**' in the folder '**Simulation**'
-4. Simulation 4: Partial disassembly in a 3×3 assembly, Open the file '**test.ttt**' in the folder '**Simulation**'
+1. Simulation 1: Full disassembly in a 3×2 assembly, Open the file '**3x2_full_disassembly.ttt**' in the folder '**Simulation**'
+2. Simulation 2: Partial disassembly in a 3×2 assembly, Open the file '**3x2_partial_disassembly.ttt**' in the folder '**Simulation**'
+3. Simulation 3: Full disassembly in a 3×3 assembly, Open the file '**3x3_full_disassembly.ttt**' in the folder '**Simulation**'
+4. Simulation 4: Partial disassembly in a 3×3 assembly, Open the file '**3x3_partial_disassembly.ttt**' in the folder '**Simulation**'
 
 
 ## 6 Contact Us
