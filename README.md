@@ -107,7 +107,7 @@ Please make sure that the following packages have already been installed before 
 2. Before running, please do the following settings:
    * Set the number of quadrotors on line 225 and 226.
    * Set the Fault status of four rotors on line 229 (the default value is rotor_faults = [True, True, True, True]).
-   * Set non-symmetric positions on line 231 (We provided examples of 3x2 and 3x3 assemblies for demonstration.).
+   * Set non-symmetric positions on line 231 (We provided examples of 3x2 and 3x3 assemblies for demonstration).
 
 ### 5.3 Algorithm 3 Plan Disassembly and Assembly Sequence
 
