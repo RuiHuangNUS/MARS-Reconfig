@@ -85,7 +85,7 @@ Advantages:
 
 ## 4 Trajectory tracking
 <div align="center">
-  <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_full_track.gif?raw=true" alt="diagram" width="400"/>
+  <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_full_track.gif?raw=true" alt="diagram" width="500"/>
 </div>
 
 Advantages:
