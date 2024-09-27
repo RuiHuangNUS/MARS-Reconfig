@@ -4,6 +4,7 @@
 The project **MARS-Reconfig** consists of two folders, which correspond to the **Algorithm** and **Simulation** in the paper that show the following two advantages of our method.
 1. We propose an efficient controllability analysis for MARS using a quasi-static model under control constraints.
 2. We propose a novel controllability margin (CM)--based method for calculating optimal self-reconfiguration sequences.
+
 Please find out more details in our paper: "Robust Self-Reconfiguration for Fault-Tolerant Control of Modular Aerial Robot Systems" 
 
 
