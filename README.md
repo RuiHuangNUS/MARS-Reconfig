@@ -93,13 +93,13 @@ Advantages:
 2. Improved trajectory tracking after self-reconfiguration
 
 ## 5 How to Use (coming soon)
-First and foremost, the implementation for Auto-Multilift is straightforward to setup. The source code has been comprehensively annotated to facilitate ease of use. To reproduce the simulation results presented in the paper, simply follow the steps outlined below, sequentially, after downloading and decompressing all the necessary folders.
+First and foremost, the implementation for MARS-Reconfig is straightforward to setup. The source code has been comprehensively annotated to facilitate ease of use. To reproduce the simulation results presented in the paper, simply follow the steps outlined below, sequentially, after downloading and decompressing all the necessary folders.
 All the control methods of different configurations are based on previous works [[1]](#1).
 
 ### 5.1 Dependency Packages
 Please make sure that the following packages have already been installed before running the source code.
 * CoppeliaSim: version 4.6.0 Info: https://www.coppeliarobotics.com/
-* imageio: version X.x.x Info: https://scikit-learn.org/stable/whats_new/v1.0.html
+* imageio: version 2.9.0 Info: https://imageio.readthedocs.io/
 
 ### 5.2 Algorithm 1 Find Optimal Reconfiguration
 
@@ -130,4 +130,5 @@ If you encounter a bug in your implementation of the code, please do not hesitat
 
 ## References
 <a id="1">[1]</a> HUANG, R., SHENG, H., Qian, C. H. E. N., Ziting, R. A. N., Zhen, X. U. E., Jiacheng, L. I., & Tong, L. I. U. (2024). Adaptive configuration control of combined UAVs based on leader-wingman mode. Chinese Journal of Aeronautics.
+
 <a id="2">[2]</a> N. Gandhi, D. Saldana, V. Kumar, and L. T. X. Phan, “Self-reconfiguration in response to faults in modular aerial systems,” IEEE Robotics and Automation Letters, vol. 5, no. 2, pp. 2522–2529, 2020.
