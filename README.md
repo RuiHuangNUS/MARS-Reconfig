@@ -6,6 +6,7 @@ The project **MARS-Reconfig** consists of two folders, which correspond to the *
 2. We propose a novel controllability margin (CM)--based method for calculating optimal self-reconfiguration sequences.
 Please find out more details in our paper: "Robust Self-Reconfiguration for Fault-Tolerant Control of Modular Aerial Robot Systems" 
 
+
 |                     A video  of this project             |
 :----------------------------------------------------------------------------------------------------------------------------------:
 [![NetFlix on UWP](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/movie_cover.png?raw=true)](https://youtu.be/SB0hwK33088 "NetFlix on UWP")
