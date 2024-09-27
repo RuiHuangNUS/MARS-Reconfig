@@ -37,7 +37,7 @@ Advantages:
 2. Improved trajectory tracking performance
 
 ## 2 How to Self-Reconfigure?
-### 2.1 Quantifying the Optimal Configuration
+### 2.1 Quantifying the optimal configuration
 
 We Calculate the optimal configuration with maximum remaining control authority using controllability margin (CM)
   (a) Calculate the Optimal Reconfiguration in a 3×2 assembly     |   (b) Calculate the Optimal Reconfiguration in a 3×3 assembly 
