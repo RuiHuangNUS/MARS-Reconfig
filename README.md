@@ -70,10 +70,10 @@ Each step of disassembly and assembly is ensured to be theoretically optimal
 
 ## 3 Comparison with the baseline method [[2]](#2)
 
- (a) 3×3 assembly: full disassembly (comparison) |   (b) 3×3 assembly: partial disassembly (comparison_origin)
+ (a) 3×3 assembly: full disassembly (comparison) |   (b) 3×3 assembly: partial disassembly (comparison origin)
 :---------------------------------------------------------------:|:--------------------------------------------------------------:
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x2_comparison.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_comparison_origin.gif)
- (c) 3×3 assembly: full disassembly (Ours) |   (d) 3×3 assembly: partial disassembly (Ours)
+ (c) 3×3 assembly: full disassembly (ours) |   (d) 3×3 assembly: partial disassembly (ours)
 ![cl_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_full.gif) | ![ol_training](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/3x3_partial.gif)
 
 Advantages:
