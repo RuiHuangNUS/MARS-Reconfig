@@ -29,18 +29,21 @@ def generate_position_lists(M, N):
     # 01-02-03
     # x_position_list = np.array([-0.5*w, 0, 0.5*w, -0.5*w, 0, 0.5*w])
     # y_position_list = np.array([-0.5*w, -0.5*w, -0.5*w, 0.5*w, 0.5*w, 0.5*w])
+
+    y_position_list = np.array([-0.5*w, 0, 0.5*w, -0.5*w, 0, 0.5*w])
+    x_position_list = np.array([-0.5*w, -0.5*w, -0.5*w, 0.5*w, 0.5*w, 0.5*w])
     # Create grid of positions centered around (0, 0)
     
-    # linspace generates M or N equally spaced values in the range
-    x_values = np.linspace(-(M-1)/2 * w, (M-1)/2 * w, M)
-    y_values = np.linspace(-(N-1)/2 * w, (N-1)/2 * w, N)
+    # # linspace generates M or N equally spaced values in the range
+    # x_values = np.linspace(-(M-1)/2 * w, (M-1)/2 * w, M)
+    # y_values = np.linspace(-(N-1)/2 * w, (N-1)/2 * w, N)
     
-    # Use meshgrid to create the full grid of positions
-    x_grid, y_grid = np.meshgrid(x_values, y_values)
+    # # Use meshgrid to create the full grid of positions
+    # x_grid, y_grid = np.meshgrid(x_values, y_values)
     
     # Flatten the grids to generate the position lists
-    x_position_list = x_grid.flatten()
-    y_position_list = y_grid.flatten()
+    # x_position_list = x_grid.flatten()
+    # y_position_list = y_grid.flatten()
     
     return x_position_list, y_position_list
 
@@ -151,28 +154,28 @@ def Calculate_CM(error_id, M, N):
 
     for i in range(n_unit):
         if error_id[i] == 0:
-            rotor_Yita = np.array([0, 0, 0, 0])
-            rotor_angle = np.array([45, 135, 225, 315])
-            rotor_dir = np.array([s2i['anticlockwise'], s2i['clockwise'], s2i['anticlockwise'], s2i['clockwise']])
-        elif error_id[i] == 1:
             rotor_Yita = np.array([1, 1, 1, 1])
             rotor_angle = np.array([45, 135, 225, 315])
             rotor_dir = np.array([s2i['anticlockwise'], s2i['clockwise'], s2i['anticlockwise'], s2i['clockwise']])
+        elif error_id[i] == 1:
+            rotor_Yita = np.array([0, 1, 1, 1])
+            rotor_angle = np.array([45, 135, 225, 315])
+            rotor_dir = np.array([s2i['anticlockwise'], s2i['clockwise'], s2i['anticlockwise'], s2i['clockwise']])
         elif error_id[i] == 2:  #
-            rotor_Yita = np.array([0, 0, 1, 1])
+            rotor_Yita = np.array([1, 0, 1, 1])
             rotor_angle = np.array([45, 135, 225, 315])
             rotor_dir = np.array([s2i['anticlockwise'], s2i['clockwise'], s2i['anticlockwise'], s2i['clockwise']])
         elif error_id[i] == 3:  # Rotate 90 degrees counterclockwise
-            rotor_Yita = np.array([0, 0, 1, 1])
-            rotor_angle = np.array([315, 45,135, 225]) 
+            rotor_Yita = np.array([1, 1, 0, 1])
+            rotor_angle = np.array([45, 135, 225, 315])
             rotor_dir = np.array([s2i['anticlockwise'], s2i['clockwise'], s2i['anticlockwise'], s2i['clockwise']])
         elif error_id[i] == 4:  # Rotate 180 degrees counterclockwise
-            rotor_Yita = np.array([0, 0, 1, 1])
-            rotor_angle = np.array([225, 315, 45,135])
+            rotor_Yita = np.array([1, 1, 1, 0])
+            rotor_angle = np.array([45, 135, 225, 315])
             rotor_dir = np.array([s2i['anticlockwise'], s2i['clockwise'], s2i['anticlockwise'], s2i['clockwise']])
         elif error_id[i] == 5:  # Rotate 270 degrees counterclockwise
-            rotor_Yita = np.array([0, 0, 1, 1])
-            rotor_angle = np.array([135, 225, 315, 45])
+            rotor_Yita = np.array([0, 0, 0, 0])
+            rotor_angle = np.array([45, 135, 225, 315])
             rotor_dir = np.array([s2i['anticlockwise'], s2i['clockwise'], s2i['anticlockwise'], s2i['clockwise']])
         # Additional configurations can be added here as needed
 
@@ -216,7 +219,16 @@ def Calculate_CM(error_id, M, N):
 
 if __name__ == "__main__":
     # Example default error_id
-    error_id = np.array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+    # NO.3
+    # 1 5.412007277552131
+    # 2 5.412007277552131
+    # 3 5.412007277552131
+    # 4 4.081797914185342
+
+    # 5 5.252481021228082
+    #No.1 
+    # 1 5.412007277552131  5.269706751064407 4.960429523917029  4.95039057390771 5.065410603512105
+    error_id = np.array([4, 0,0,0, 0, 0, 1, 1, 1, 1, 1])
     M=3
     N=2
     Calculate_CM(error_id,M,N)
