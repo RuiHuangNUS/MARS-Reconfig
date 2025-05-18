@@ -93,7 +93,7 @@ Advantages:
 1. No oscillation during trajectory switching after self-reconfiguration
 2. Improved trajectory tracking after self-reconfiguration
 
-## 5 How to Use (coming soon)
+## 5 How to Use
 First and foremost, the implementation for MARS-Reconfig is straightforward to setup. The source code has been comprehensively annotated to facilitate ease of use. To reproduce the simulation results presented in the paper, simply follow the steps outlined below, sequentially, after downloading and decompressing all the necessary folders.
 All the control methods of different configurations are based on previous works [[1]](#1).
 
@@ -123,9 +123,26 @@ Please make sure that the following packages have already been installed before 
 ## 6 Contact Us
 If you encounter a bug in your implementation of the code, please do not hesitate to inform me.
 * Name: Mr. Rui Huang
-* Email: ruihuang@nus.edu.sg
+* Email: ruihuang@u.nus.edu
+
+## Cite
+If you find this work helpful, please consider citing our paper.
+
+```
+@misc{huang2025robustselfreconfigurationfaulttolerantcontrol,
+      title={Robust Self-Reconfiguration for Fault-Tolerant Control of Modular Aerial Robot Systems}, 
+      author={Rui Huang and Siyu Tang and Zhiqian Cai and Lin Zhao},
+      year={2025},
+      eprint={2503.09376},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2503.09376}, 
+}
+```
 
 ## References
-<a id="1">[1]</a> R. HUANG, H. SHENG, C. Qian, R. Ziting, X. Zhen, L. Jiacheng, and L. Tong, “Adaptive configuration control of combined uavs based on leader-wingman mode,” Chinese Journal of Aeronautics, 2024.
+<a id="1">[1]</a> Huang, Rui, Hanlin Sheng, C. H. E. N. Qian, R. A. N. Ziting, X. U. E. Zhen, L. I. Jiacheng, and L. I. U. Tong. "Adaptive configuration control of combined UAVs based on leader-wingman mode." Chinese Journal of Aeronautics 37, no. 12 (2024): 416-433.
 
-<a id="2">[2]</a> N. Gandhi, D. Saldana, V. Kumar, and L. T. X. Phan, “Self-reconfiguration in response to faults in modular aerial systems,” IEEE Robotics and Automation Letters, vol. 5, no. 2, pp. 2522–2529, 2020.
+<a id="2">[2]</a> Gandhi, Neeraj, David Saldana, Vijay Kumar, and Linh Thi Xuan Phan. "Self-reconfiguration in response to faults in modular aerial systems." IEEE Robotics and Automation Letters 5, no. 2 (2020): 2522-2529.
+
+<a id="3">[3]</a> Huang, Rui, Zhenyu Zhang, Siyu Tang, Zhiqian Cai, and Lin Zhao. "Robust Fault-Tolerant Control and Agile Trajectory Planning for Modular Aerial Robotic Systems." arXiv preprint arXiv:2503.09351 (2025).
