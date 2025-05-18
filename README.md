@@ -10,8 +10,8 @@ Please find out more details in our paper: "Robust Self-Reconfiguration for Faul
 
 |                     A video  of this project             |
 :----------------------------------------------------------------------------------------------------------------------------------:
-[![NetFlix on UWP](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/movie_cover.jpg?raw=true)](https://youtu.be/SB0hwK33088 "NetFlix on UWP")
-https://youtu.be/SB0hwK33088
+[![NetFlix on UWP](https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/movie_cover.jpg?raw=true)](Youtube: https://youtu.be/R7IvXotEuXU or https://youtu.be/SB0hwK33088 Bilibili:"NetFlix on UWP")
+https://youtu.be/R7IvXotEuXU
 |                     A diagram of the self-reconfiguration             |
 <div align="center">
   <img src="https://github.com/RuiHuangNUS/MARS-Reconfig/blob/main/Picture/Fig1.png?raw=true" alt="diagram" width="400"/>
