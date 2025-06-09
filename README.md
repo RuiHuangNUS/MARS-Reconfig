@@ -145,4 +145,4 @@ If you find this work helpful, please consider citing our paper.
 
 <a id="2">[2]</a> Gandhi, Neeraj, David Saldana, Vijay Kumar, and Linh Thi Xuan Phan. "Self-reconfiguration in response to faults in modular aerial systems." IEEE Robotics and Automation Letters 5, no. 2 (2020): 2522-2529.
 
-<a id="3">[3]</a> Huang, Rui, Zhenyu Zhang, Siyu Tang, Zhiqian Cai, and Lin Zhao. "Robust Fault-Tolerant Control and Agile Trajectory Planning for Modular Aerial Robotic Systems." arXiv preprint arXiv:2503.09351 (2025).
+<a id="3">[3]</a> Huang, Rui, Zhenyu Zhang, Siyu Tang, Zhiqian Cai, and Lin Zhao. "Robust Fault-Tolerant Control and Agile Trajectory Planning for Modular Aerial Robotic Systems." arXiv preprint arXiv:2503.09351 (2025). Github: https://github.com/RuiHuangNUS/MARS-FTCC
